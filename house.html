@@ -3,27 +3,35 @@
   <head>
     <meta charset="utf-8" />
     <title>Airbnb - House Name</title>
-    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/340c2e6de9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="container p-2">
+     <!-- TOP Container with Logo and Account+Login Button -->
+     <div class="container p-2">
       <div class="row">
-        <div class="col">
-          <img src="images/logo-airbnb.png">
+        <!-- Logo -->
+        <div class="col align-self-center">
+          <img src="images/logo-airbnb.png" class="w-25">
         </div>
+        <!-- Buttons / Links -->
         <div class="col text-end">
-          <form>
-            <button type="button" class="btn btn-outline-danger">Name</button>
-            <button type="button" class="btn btn-outline-secondary">Login</button>
-          </form>
+            <a class="btn btn-outline-secondary">
+                <img src="https://randomuser.me/api/portraits/men/11.jpg" id="avatar-login">
+                <span>Name</span>
+            </a>
+            <a type="button" class="btn btn-outline-secondary">Login</a>
         </div>
       </div>
     </div>
-    <div class="row">
+    <!-- Container with House Pictures -->
+    <div class="row border border-1">
+      <!-- Big Main Picture -->
       <div class="col p-3">
         <img src="https://res.cloudinary.com/dsko6ntfj/image/upload/v1640295026/portal/web%20development%20beginners/05%20Project%20Airbnb/house%2001/house_01_01.png" class="img-fluid">
       </div>
+      <!-- Small Pictures -->
       <div class="col">
         <div class="row p-3">
           <div class="col">
@@ -60,17 +68,22 @@
         </div>
       </div>
     </div>
+    <!-- Container Text and Textarea -->
     <div class="container mt-3">
       <div class="row">
-        <div class="col-7">
+        <!-- Container Left Side -->
+        <div class="col-8">
           <h2>Luxury Villa in Chaweng</h2>
-          <span>City • X Rooms</span>
+          <p class="card-text fs-6 fw-normal"> 
+            <small>
+              <i class="fa-solid fa-location-dot"></i> City • X Rooms</p>
+            </small>
           <div class="row">
-            <div class="col">
-              <img src="" alt="">PIC
+            <div class="col-1 d-flex align-items-center">
+              <img src="https://randomuser.me/api/portraits/men/13.jpg" id="avatar-house">
             </div>
-            <div class="col">
-              <span>Hosted by</span>
+            <div class="col-11 pt-3">
+              <span class="fs-6 text-muted"><small>Hosted by</small></span>
               <p>Firstname Lastname</p>
             </div>
           </div>
@@ -79,21 +92,29 @@
             <h2>0 Reviews</h2>
             <span>Leave a review</span>
             <div>
-              <textarea></textarea>
+              <textarea class="form-control" rows="3"></textarea>
             </div>
-            <div>
-              <img src="" alt="">Dumbs Up
-              <img src="" alt="">Dumbs Down
+            <!-- Dumbs up & Dumps Down Button -->
+            <div class="mt-2 mb-2">
+              <button type="button" class="btn btn-outline-secondary">
+                <i class="fa-solid fa-thumbs-up"></i>
+              </button>
+              <button type="button" class="btn btn-outline-secondary">
+                <i class="fa-solid fa-thumbs-down"></i>
+             </button>
             </div>
             <a href="#" class="btn btn-primary">Submit</a>
           </form>
         </div>
-        <div class="col-5">
+        <!-- Container Right Side -->
+        <div class="col-4">
           <div class="card" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">$150/night</h5>
               <p class="card-text">0 reviews</p>
-              <textarea></textarea>
+              <div class="mb-3">
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
               <a href="#" class="btn btn-primary">Request booking</a>
             </div>
           </div>

@@ -1,8 +1,13 @@
-/* * {
+* {
     border: 1px solid red;
-}  */
+}  
 
-body {
-    background-image: url("images/thailand.jpg");
-    background-size: cover;
-   }
+#avatar-login {
+    width: 20px;
+    border-radius: 100%;
+}
+
+#avatar-house {
+    width: 40px;
+    border-radius: 100%;
+}
