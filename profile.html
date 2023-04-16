@@ -24,15 +24,95 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <h2>Profile</h2>
+    <!-- Container with 2 Columns -->
+    <div class="container p-2">
+      <div class="row mt-2 mb-2">
+        <div class="col-3 border-bottom border-1">
+          <h2 class="fw-normal">Profile</h2>
         </div>
-        <div class="col-8">
-          <h2>My Listing</h2>
+        <div class="col-1"></div>
+        <div class="col-7 border-bottom border-1">
+          <h2 class="fw-normal">My Listing</h2>
         </div>
       </div>
-    </div>
+      <!-- Container with Inputs -->
+      <div class="container p-2">
+        <div class="row">
+          <!-- Profile Input -->
+          <div class="col-3">
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="email" class="form-control" placeholder="Firstname Lastname">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email address</label>
+              <input type="email" class="form-control" placeholder="name@example.com">
+            </div>
+            <div>
+              <span>Profile Picture</span>
+            </div>
+            <div class="pt-2">
+              <img src="https://randomuser.me/api/portraits/men/13.jpg" id="avatar-house">
+            </div>
+            <form class="pt-2">
+              <input type="email" class="form-control" placeholder="https://...">
+              <div class="pt-2">
+                <a href="#" class="btn btn-success">Save Changes</a>
+              </div>
+            </form>
+          </div>
+          <!-- Empty Column -->
+          <div class="col-1"></div>
+          <!-- My Listings Inputs -->
+          <div class="col-7">
+            <div class="pt-2">
+              <a href="#" class="btn btn-success">List a House</a>
+            </div>
+            <!-- No Items Listed -->
+            <!-- <ul class="list-group pt-2">
+              <li class="list-group-item">You don't have any houses listed</li>
+            </ul> -->
+            <!-- Listing 1 House Card -->
+            <div class="card mb-3 mt-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="https://res.cloudinary.com/dsko6ntfj/image/upload/v1640295026/portal/web%20development%20beginners/05%20Project%20Airbnb/house%2001/house_01_01.png" class="img-fluid rounded-start">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Luxury Villa in Chaweng</h5>
+                    <div class="text-muted">
+                      <small><i class="fa-solid fa-location-dot"></i> 4 Rooms • $150/Night</p></small>
+                    </div>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a type="button" class="btn btn-outline-secondary">Edit</a>
+                    <a type="button" class="btn btn-outline-success">View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Listing 2 House Card -->
+            <div class="card mb-3 mt-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="https://res.cloudinary.com/dsko6ntfj/image/upload/v1640295026/portal/web%20development%20beginners/05%20Project%20Airbnb/house%2001/house_01_01.png" class="img-fluid rounded-start">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Luxury Villa in Chaweng</h5>
+                    <div class="text-muted">
+                      <small><i class="fa-solid fa-location-dot"></i> 4 Rooms • $150/Night</p></small>
+                    </div>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a type="button" class="btn btn-outline-secondary">Edit</a>
+                    <a type="button" class="btn btn-outline-success">View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
   </body>
 </html>
